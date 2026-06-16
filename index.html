@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Michael Butts — Fractional COO & AI-Forward Operations</title>
+<meta name="description" content="An AI-forward operations executive who steps into any part of your business and makes it run better. Fractional COO, VP of Operations, and AI automation. Remote." />
+<meta property="og:title" content="Michael Butts — Fractional COO & AI-Forward Operations" />
+<meta property="og:description" content="Every part of your business can run better. With me, it will. Fractional COO / VP Operations + AI automation. Remote." />
+<meta property="og:type" content="website" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='14'%20fill='%230F9E8E'/%3E%3Ctext%20x='32'%20y='45'%20font-family='Arial,sans-serif'%20font-size='33'%20font-weight='700'%20fill='%23ffffff'%20text-anchor='middle'%3EMB%3C/text%3E%3C/svg%3E" />
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Cormorant+Garamond:ital,wght@1,500;1,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap');
+
+:root{
+  --primary:#0F9E8E; --primary-rgb:15,158,142; --primary-dark:#0B7E71; --primary-light:#5FC9BB;
+  --accent:#F2A65E;
+  --bg:#F7F9F8; --surface:#FFFFFF; --ink:#13181A; --muted:#5B6670; --divider:#E4E9E7; --deep:#0C1413;
+  --display:'Plus Jakarta Sans',system-ui,sans-serif; --serif:'Cormorant Garamond',Georgia,serif;
+  --body:'Inter',system-ui,sans-serif; --mono:'JetBrains Mono',ui-monospace,monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);line-height:1.6;overflow-x:hidden}
+::selection{background:var(--primary);color:#fff}
+::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:var(--primary-light);border-radius:10px}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--primary-dark)}
+.serif{font-family:var(--serif);font-style:italic;font-weight:500}
+h1,h2,h3{font-family:var(--display);font-weight:800;letter-spacing:-.02em;line-height:1.05}
+section{padding:clamp(72px,11vw,150px) 0}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.22,.61,.36,1),transform .9s cubic-bezier(.22,.61,.36,1)}
+.reveal.in{opacity:1;transform:none}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:15px 26px;border-radius:999px;font-weight:600;font-size:15px;position:relative;overflow:hidden;transition:transform .35s cubic-bezier(.25,.46,.45,.94),box-shadow .35s;cursor:pointer;border:none}
+.btn svg{width:17px;height:17px}
+.btn-primary{background:var(--primary);color:#fff;box-shadow:0 10px 30px -8px rgba(var(--primary-rgb),.55)}
+.btn-primary:hover{transform:translateY(-2px) scale(1.02);box-shadow:0 16px 40px -8px rgba(var(--primary-rgb),.7)}
+.btn-ghost{background:rgba(255,255,255,.06);color:#fff;border:1px solid rgba(255,255,255,.22)}
+.btn-ghost:hover{transform:translateY(-2px) scale(1.02);background:rgba(255,255,255,.12)}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-dark:hover{transform:translateY(-2px) scale(1.02)}
+
+/* NAV */
+header{position:fixed;top:0;left:0;right:0;z-index:50;transition:all .4s}
+.nav{display:flex;align-items:center;justify-content:space-between;margin:14px auto;max-width:1200px;padding:12px 16px 12px 22px;border-radius:999px;transition:all .4s}
+header.scrolled .nav{background:rgba(247,249,248,.72);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border:1px solid rgba(var(--primary-rgb),.16);box-shadow:0 8px 30px -12px rgba(0,0,0,.18);margin-top:10px}
+.brand{display:flex;flex-direction:column;line-height:1.1}
+.brand b{font-family:var(--display);font-weight:800;font-size:18px;letter-spacing:-.01em}
+.brand span{font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+header:not(.scrolled) .brand b,header:not(.scrolled) .brand span{color:#fff}
+header:not(.scrolled) .brand span{color:rgba(255,255,255,.7)}
+.nav-links{display:flex;gap:30px;align-items:center}
+.nav-links a{font-size:14px;font-weight:500;transition:color .25s;color:var(--ink)}
+header:not(.scrolled) .nav-links a{color:rgba(255,255,255,.85)}
+.nav-links a:hover{color:var(--primary)}
+.nav-cta{display:flex;align-items:center;gap:14px}
+.hamburger{display:none;background:none;border:none;cursor:pointer;flex-direction:column;gap:5px}
+.hamburger span{width:24px;height:2px;background:#fff;transition:.3s}
+header.scrolled .hamburger span{background:var(--ink)}
+.mobile-menu{position:fixed;inset:0;z-index:49;background:rgba(12,20,19,.97);backdrop-filter:blur(10px);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:28px;opacity:0;pointer-events:none;transition:opacity .35s}
+.mobile-menu.open{opacity:1;pointer-events:auto}
+.mobile-menu a{color:#fff;font-family:var(--display);font-weight:700;font-size:26px}
+
+/* HERO */
+.hero{position:relative;min-height:100vh;min-height:100dvh;display:flex;align-items:flex-start;background:var(--deep);overflow:hidden}
+.hero-glow{position:absolute;top:-15%;right:-10%;width:60vw;height:60vw;max-width:760px;max-height:760px;border-radius:50%;background:radial-gradient(circle,rgba(var(--primary-rgb),.42),transparent 62%);filter:blur(20px)}
+.hero-glow2{position:absolute;bottom:-25%;left:-10%;width:50vw;height:50vw;border-radius:50%;background:radial-gradient(circle,rgba(var(--primary-rgb),.18),transparent 60%);filter:blur(30px)}
+.grid-bg{position:absolute;inset:0;background-image:linear-gradient(rgba(var(--primary-rgb),.10) 1px,transparent 1px),linear-gradient(90deg,rgba(var(--primary-rgb),.10) 1px,transparent 1px);background-size:46px 46px;mask-image:radial-gradient(circle at 60% 40%,#000,transparent 75%);-webkit-mask-image:radial-gradient(circle at 60% 40%,#000,transparent 75%)}
+.particle{position:absolute;width:7px;height:7px;border-radius:50%;background:var(--primary);box-shadow:0 0 16px 3px rgba(var(--primary-rgb),.7);opacity:.7;animation:float 7s ease-in-out infinite}
+.netfx{position:absolute;inset:0;z-index:1;pointer-events:none;opacity:.9;-webkit-mask-image:linear-gradient(90deg,transparent 30%,#000 64%);mask-image:linear-gradient(90deg,transparent 30%,#000 64%)}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-22px)}}
+.hero-inner{position:relative;z-index:3;padding-top:96px;padding-bottom:60px}
+.hero h1{font-size:clamp(40px,6.4vw,84px);color:#fff;max-width:15ch}
+.hero h1 .serif{display:block;color:var(--primary-light);font-weight:600;font-size:.92em}
+.hero-sub{margin-top:26px;max-width:54ch;color:rgba(255,255,255,.72);font-size:clamp(16px,1.7vw,19px)}
+.hero-cta{margin-top:38px;display:flex;flex-wrap:wrap;gap:14px}
+.hero-scroll{margin-top:32px;display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.5)}
+.hero-scroll .line{width:46px;height:1px;background:rgba(255,255,255,.4)}
+
+/* STATS */
+.stats{background:var(--surface);border-bottom:1px solid var(--divider)}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:30px}
+.stat .num{font-family:var(--display);font-weight:800;font-size:clamp(38px,5vw,60px);letter-spacing:-.03em;background:linear-gradient(135deg,var(--primary),var(--primary-dark));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;line-height:1}
+.stat .lbl{margin-top:8px;color:var(--muted);font-size:14px;font-weight:500}
+
+/* SECTION HEADERS */
+.sec-head{max-width:62ch}
+.sec-head .eyebrow{display:block;margin-bottom:14px}
+.sec-head h2{font-size:clamp(30px,4.6vw,52px)}
+.sec-head p{margin-top:16px;color:var(--muted);font-size:clamp(16px,1.7vw,18px)}
+
+/* TWO WAYS */
+.ways{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:54px}
+.way{background:var(--surface);border:1px solid var(--divider);border-radius:26px;padding:38px;transition:transform .4s,box-shadow .4s;position:relative;overflow:hidden}
+.way:hover{transform:translateY(-5px);box-shadow:0 24px 60px -28px rgba(0,0,0,.28)}
+.way .tag{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--primary-dark)}
+.way h3{font-size:26px;margin:14px 0 12px}
+.way p{color:var(--muted);font-size:16px}
+.way .ico{width:52px;height:52px;border-radius:15px;background:rgba(var(--primary-rgb),.10);display:flex;align-items:center;justify-content:center;margin-bottom:20px}
+.way .ico svg{width:26px;height:26px;color:var(--primary);stroke:var(--primary)}
+
+/* APPROACH STEPS */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:54px;counter-reset:step}
+.step{background:var(--surface);border:1px solid var(--divider);border-radius:24px;padding:34px;position:relative}
+.step .n{font-family:var(--mono);font-size:13px;color:var(--primary);letter-spacing:.1em}
+.step h3{font-size:23px;margin:16px 0 12px}
+.step p{color:var(--muted);font-size:15.5px}
+.step .bar{position:absolute;top:0;left:34px;right:34px;height:3px;background:linear-gradient(90deg,var(--primary),transparent);border-radius:3px}
+
+/* SERVICES (dark) */
+.services{background:var(--deep);color:#fff}
+.services .sec-head h2{color:#fff}
+.services .sec-head p{color:rgba(255,255,255,.65)}
+.services .eyebrow{color:var(--primary-light)}
+.svc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;margin-top:54px;background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.10);border-radius:24px;overflow:hidden}
+.svc{background:var(--deep);padding:36px 32px;transition:background .35s}
+.svc:hover{background:#121d1b}
+.svc .ico{width:46px;height:46px;border-radius:13px;background:rgba(var(--primary-rgb),.16);display:flex;align-items:center;justify-content:center;margin-bottom:20px}
+.svc .ico svg{width:23px;height:23px;stroke:var(--primary-light)}
+.svc h3{font-size:20px;color:#fff;margin-bottom:9px}
+.svc p{color:rgba(255,255,255,.6);font-size:15px}
+
+/* TRUST */
+.trust-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:50px}
+.trust{background:var(--surface);border:1px solid var(--divider);border-radius:22px;padding:30px;display:flex;gap:16px;align-items:flex-start}
+.trust .ico{flex-shrink:0;width:44px;height:44px;border-radius:50%;background:rgba(var(--primary-rgb),.10);display:flex;align-items:center;justify-content:center}
+.trust .ico svg{width:22px;height:22px;stroke:var(--primary)}
+.trust p{font-size:15.5px;font-weight:500}
+.verified{display:inline-flex;align-items:center;gap:6px;background:rgba(var(--primary-rgb),.12);color:var(--primary-dark);padding:5px 11px;border-radius:999px;font-size:12px;font-weight:600;width:fit-content;transition:background .25s}
+.verified:hover{background:rgba(var(--primary-rgb),.22)}
+.verified svg{width:14px;height:14px}
+
+/* CONTACT */
+.contact{background:var(--surface);border-top:1px solid var(--divider)}
+.contact-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:60px;align-items:start}
+.headshot{width:118px;height:118px;border-radius:50%;object-fit:cover;border:3px solid var(--primary);box-shadow:0 10px 26px -10px rgba(var(--primary-rgb),.55);margin-bottom:22px;display:block}
+.contact h2{font-size:clamp(30px,4.6vw,52px)}
+.contact .lead{margin-top:16px;color:var(--muted);font-size:18px;max-width:42ch}
+.contact-alt{margin-top:30px;display:flex;flex-direction:column;gap:14px}
+.contact-alt a{display:inline-flex;align-items:center;gap:11px;font-weight:600;color:var(--primary-dark)}
+.contact-alt a svg{width:19px;height:19px;stroke:var(--primary)}
+.cta-card{position:relative;background:var(--deep);border-radius:32px;padding:clamp(48px,7vw,82px) 24px;text-align:center;overflow:hidden;box-shadow:0 40px 90px -45px rgba(12,20,19,.55)}
+.cta-glow{position:absolute;top:-45%;left:50%;transform:translateX(-50%);width:75%;height:130%;border-radius:50%;background:radial-gradient(circle,rgba(var(--primary-rgb),.30),transparent 60%);filter:blur(24px)}
+.cta-inner{position:relative;z-index:2;max-width:660px;margin:0 auto}
+.cta-card .headshot{border-color:var(--primary-light)}
+form{display:grid;gap:16px}
+.field{display:grid;gap:7px}
+.field label{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.field input,.field textarea{font-family:var(--body);font-size:15px;padding:14px 16px;border:1px solid var(--divider);border-radius:13px;background:var(--bg);color:var(--ink);transition:border-color .25s,box-shadow .25s;width:100%}
+.field input:focus,.field textarea:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 3px rgba(var(--primary-rgb),.15)}
+.field textarea{resize:vertical;min-height:120px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.sent-card{display:none;text-align:center;padding:50px 30px;border:1px solid var(--divider);border-radius:20px;background:var(--bg)}
+.sent-card.show{display:block}
+.sent-card .check{width:60px;height:60px;border-radius:50%;background:rgba(var(--primary-rgb),.12);display:flex;align-items:center;justify-content:center;margin:0 auto 18px}
+.sent-card .check svg{width:30px;height:30px;stroke:var(--primary)}
+.sent-card h3{font-size:24px;margin-bottom:8px}
+.sent-card p{color:var(--muted)}
+form.hide{display:none}
+
+/* FOOTER */
+footer{background:var(--deep);color:#fff;padding:64px 0 36px}
+.foot-top{display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap;padding-bottom:36px;border-bottom:1px solid rgba(255,255,255,.12)}
+.foot-brand b{font-family:var(--display);font-weight:800;font-size:22px}
+.foot-brand p{color:rgba(255,255,255,.6);margin-top:10px;max-width:40ch;font-size:15px}
+.status{display:inline-flex;align-items:center;gap:9px;margin-top:18px;font-family:var(--mono);font-size:12px;letter-spacing:.08em;color:var(--primary-light)}
+.dot{width:9px;height:9px;border-radius:50%;background:var(--primary);box-shadow:0 0 0 0 rgba(var(--primary-rgb),.7);animation:pulse 2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(var(--primary-rgb),.6)}70%{box-shadow:0 0 0 12px rgba(var(--primary-rgb),0)}100%{box-shadow:0 0 0 0 rgba(var(--primary-rgb),0)}}
+.foot-links{display:flex;gap:26px;align-items:center}
+.foot-links a{color:rgba(255,255,255,.8);font-size:14px;display:inline-flex;gap:8px;align-items:center;transition:color .25s}
+.foot-links a:hover{color:var(--primary-light)}
+.foot-links svg{width:17px;height:17px;stroke:currentColor}
+.foot-bottom{margin-top:28px;color:rgba(255,255,255,.4);font-size:13px}
+
+@media(max-width:860px){
+  .nav-links{display:none}.hamburger{display:flex}
+  .stats-grid{grid-template-columns:1fr 1fr;gap:30px 20px}
+  .ways,.steps,.svc-grid,.trust-grid,.contact-grid{grid-template-columns:1fr}
+  .svc-grid{gap:1px}
+  .contact-grid{gap:40px}
+}
+@media(max-width:480px){.form-row{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header id="header">
+  <nav class="nav wrap">
+    <div class="brand"><b><a href="#home">Michael Butts</a></b><span><a href="mailto:mike@buildoutreach.io">mike@buildoutreach.io</a></span><span style="margin-top:2px"><a href="tel:+15707665366">(570) 766-5366</a></span></div>
+    <div class="nav-links">
+      <a href="#approach">Approach</a>
+      <a href="#ways">How I help</a>
+      <a href="#services">Services</a>
+      <a href="#results">Results</a>
+    </div>
+    <div class="nav-cta">
+      <a href="https://cal.com/michael-butts/30min" target="_blank" rel="noopener" class="btn btn-primary">Book a call</a>
+      <button class="hamburger" id="ham" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#approach">Approach</a>
+  <a href="#ways">How I help</a>
+  <a href="#services">Services</a>
+  <a href="#results">Results</a>
+  <a href="https://cal.com/michael-butts/30min" target="_blank" rel="noopener">Book a call</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-glow"></div>
+  <div class="hero-glow2"></div>
+  <div class="grid-bg"></div>
+  <canvas id="netfx" class="netfx" aria-hidden="true"></canvas>
+  <span class="particle" style="top:22%;right:18%;animation-delay:0s"></span>
+  <span class="particle" style="top:34%;right:30%;animation-delay:1.4s"></span>
+  <span class="particle" style="top:46%;right:14%;animation-delay:2.8s"></span>
+  <span class="particle" style="top:28%;right:42%;animation-delay:.7s"></span>
+  <div class="wrap hero-inner">
+    <p class="eyebrow reveal" style="color:var(--primary-light)">AI-Forward · Automations · Fractional COO · VP Operations</p>
+    <h1 class="reveal">Chaos, confusion, and clutter kill growth.<span class="serif">Let's clean it up, so you can scale.</span></h1>
+    <p class="hero-sub reveal">If you're not scaling fast enough, or the daily grind has turned into pain, let's fix it. Grab a spot on my calendar below.</p>
+    <div class="hero-cta reveal">
+      <a href="https://cal.com/michael-butts/30min" target="_blank" rel="noopener" class="btn btn-primary">Book a call <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg></a>
+      <a href="mailto:mike@buildoutreach.io" class="btn btn-ghost"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg> Email me</a>
+    </div>
+    <div class="hero-scroll reveal"><span class="line"></span> Scroll</div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+  <div class="wrap stats-grid" style="grid-template-columns:repeat(2,1fr);max-width:680px;margin:0 auto;text-align:center">
+    <div class="stat reveal"><div class="num" data-target="15" data-suffix="+">0</div><div class="lbl">Years leading operations</div></div>
+    <div class="stat reveal"><div class="num" data-prefix="$" data-target="16.5" data-suffix="M" data-decimals="1">0</div><div class="lbl">Completed ops projects</div></div>
+  </div>
+</section>
+
+<!-- APPROACH -->
+<section id="approach" style="background:var(--bg)">
+  <div class="wrap">
+    <div class="sec-head reveal" style="text-align:center;margin-left:auto;margin-right:auto">
+      <p>Chaos doesn't clear all at once. I find the constraints actually holding you back, remove them, and build systems that mitigate the problem. It usually shows up as one of three things:</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><div class="bar"></div><div class="n">01</div><h3>Chaos</h3><p>Usually caused by heroics, fire drills, and aggressive growth without systems. I install the SOPs that let it run without heavy oversight.</p></div>
+      <div class="step reveal"><div class="bar"></div><div class="n">02</div><h3>Confusion</h3><p>Nobody trusts the numbers and priorities shift weekly, sometimes daily. I clean the data and build the priority pipeline so the team knows what matters and works from information it can trust.</p></div>
+      <div class="step reveal"><div class="bar"></div><div class="n">03</div><h3>Clutter</h3><p>Too many tools, manual steps, and busywork. I cut the noise and automate the repetitive tasks.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- TWO WAYS -->
+<section id="ways">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Two ways to work together</span>
+      <h2>Hire the operator, or build the automation.</h2>
+      <p>Find what's slowing down your business and fix it. Bring me in to run operations, or to ship the automations and AI that takes work off your plate and increase your profit.</p>
+    </div>
+    <div class="ways">
+      <div class="way reveal">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2"><path d="M3 21h18M5 21V7l8-4v18M19 21V11l-6-4"/><path d="M9 9v.01M9 12v.01M9 15v.01M9 18v.01"/></svg></div>
+        <span class="tag">Fractional / Embedded</span>
+        <h3>Fractional COO &amp; Operator</h3>
+        <p>Drop me into your business as the operator who installs the systems, steadies the chaos, and makes the whole thing run. Remote, full-time or fractional.</p>
+      </div>
+      <div class="way reveal">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M9 9h6v6H9zM2 10v4M22 10v4M10 2h4M10 22h4"/></svg></div>
+        <span class="tag">Project-based</span>
+        <h3>AI &amp; Workflow Automation</h3>
+        <p>Already running, but drowning in manual work? I map where AI and automation save hours and money, then build and ship it, wired into the tools you already use.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">What I do</span>
+      <h2>Operations leadership, end to end.</h2>
+      <p>From the C-suite seat to the systems underneath it. Pick the pieces you need, or hand me the whole operation.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc reveal"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2"><path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l3 3M16 16l3 3M19 5l-3 3M8 16l-3 3"/><circle cx="12" cy="12" r="3"/></svg></div><h3>Operations Leadership</h3><p>COO / VP Ops: own the whole operation, align the team, and make the numbers predictable.</p></div>
+      <div class="svc reveal"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2"><path d="M12 2 4 6v6c0 5 3.5 8 8 10 4.5-2 8-5 8-10V6z"/><path d="m9 12 2 2 4-4"/></svg></div><h3>Turnaround &amp; Stabilization</h3><p>Stop the bleeding, cut burn, and rebuild the operating framework when things are on fire.</p></div>
+      <div class="svc reveal"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2"><path d="M3 17l6-6 4 4 7-7M14 5h7v7"/></svg></div><h3>Revenue Operations</h3><p>Clean the pipeline, connect the tools, and build reporting leaders can actually trust.</p></div>
+      <div class="svc reveal"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M9 9h6v6H9zM2 10v4M22 10v4M10 2h4M10 22h4"/></svg></div><h3>AI &amp; Workflow Automation</h3><p>Agents and automations that remove manual work, wired into the systems you already run.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- RESULTS / TRUST -->
+<section id="results">
+  <div class="wrap">
+    <div class="sec-head reveal" style="text-align:center;margin:0 auto">
+      <span class="eyebrow">Proof, not promises</span>
+      <h2>Recommended by the people I've worked with.</h2>
+      <p>Every name links to the real person, so you can verify each one.</p>
+    </div>
+    <div class="trust-grid" style="grid-template-columns:repeat(2,1fr);max-width:920px;margin:50px auto 0">
+      <div class="trust reveal" style="flex-direction:column;align-items:flex-start;gap:14px">
+        <div style="color:#F2A65E;font-size:20px;letter-spacing:3px" aria-label="5 out of 5 stars">★★★★★</div>
+        <p style="font-style:italic;color:var(--ink);font-size:16px;line-height:1.65">"I had the privilege of working with Michael for more than 15 years, and in that time, I saw firsthand his ability to lead people, manage complex projects, and build company systems. Michael has always worked with efficiency and an unmatched commitment to excellence. He possesses a rare combination of strategic thinking and practical execution that I have always appreciated. He consistently finds creative, thoughtful ways to help businesses grow, improve, and scale. Anyone looking for a steady, capable, and forward-thinking leader would be well served working with him."</p>
+        <div style="display:flex;align-items:center;gap:12px;margin-top:auto">
+          <img src="pjmills.jpg" alt="PJ Mills" style="width:46px;height:46px;border-radius:50%;object-fit:cover;flex-shrink:0" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <span style="width:46px;height:46px;border-radius:50%;background:rgba(15,158,142,.12);color:var(--primary-dark);display:none;align-items:center;justify-content:center;font-weight:700;font-size:15px;flex-shrink:0">PM</span>
+          <div style="display:flex;flex-direction:column;gap:6px">
+            <span style="font-weight:600;color:var(--ink);line-height:1.3">PJ Mills, Vice President, Business Development &amp; Marketing</span>
+            <a href="https://www.linkedin.com/in/pjmills15" target="_blank" rel="noopener" class="verified"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5A2.5 2.5 0 1 1 0 3.5a2.5 2.5 0 0 1 4.98 0zM.5 8h4V24h-4V8zM8.5 8h3.8v2.2h.05c.53-1 1.83-2.2 3.77-2.2 4.03 0 4.78 2.65 4.78 6.1V24h-4v-7.1c0-1.7-.03-3.9-2.38-3.9-2.38 0-2.75 1.86-2.75 3.78V24h-4V8z"/></svg>Verified on LinkedIn<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></a>
+          </div>
+        </div>
+      </div>
+      <div class="trust reveal" style="flex-direction:column;align-items:flex-start;gap:14px">
+        <div style="color:#F2A65E;font-size:20px;letter-spacing:3px" aria-label="5 out of 5 stars">★★★★★</div>
+        <p style="font-style:italic;color:var(--ink);font-size:16px;line-height:1.65">"Michael is an extremely understanding and efficient communicator, very good at researching options and problem solving the root cause, instead of just giving definitive answers to indefinite problems. Best Bang for Buck option, 10/10 would recommend."</p>
+        <div style="display:flex;align-items:center;gap:12px;margin-top:auto">
+          <img src="josiahfox.jpg" alt="Josiah Fox" style="width:46px;height:46px;border-radius:50%;object-fit:cover;flex-shrink:0" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <span style="width:46px;height:46px;border-radius:50%;background:rgba(15,158,142,.12);color:var(--primary-dark);display:none;align-items:center;justify-content:center;font-weight:700;font-size:15px;flex-shrink:0">JF</span>
+          <div style="display:flex;flex-direction:column;gap:6px">
+            <span style="font-weight:600;color:var(--ink);line-height:1.3">Josiah Fox, CRO</span>
+            <a href="https://www.linkedin.com/in/josiah-fox-330679106" target="_blank" rel="noopener" class="verified"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5A2.5 2.5 0 1 1 0 3.5a2.5 2.5 0 0 1 4.98 0zM.5 8h4V24h-4V8zM8.5 8h3.8v2.2h.05c.53-1 1.83-2.2 3.77-2.2 4.03 0 4.78 2.65 4.78 6.1V24h-4v-7.1c0-1.7-.03-3.9-2.38-3.9-2.38 0-2.75 1.86-2.75 3.78V24h-4V8z"/></svg>Verified on LinkedIn<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="cta-card reveal">
+      <div class="grid-bg"></div>
+      <div class="cta-glow"></div>
+      <div class="cta-inner">
+        <img src="headshot.jpg" alt="Michael Butts" class="headshot" style="margin:0 auto 22px" />
+        <span class="eyebrow" style="color:var(--primary-light)">Let's talk</span>
+        <p class="lead" style="margin:18px auto 0;color:rgba(255,255,255,.82);font-size:21px">Book a free 30-minute call and we'll dig in to see how I can service your business.</p>
+        <div style="margin-top:34px;display:flex;flex-direction:column;align-items:center;gap:18px">
+          <a href="https://cal.com/michael-butts/30min" target="_blank" rel="noopener" class="btn btn-primary" style="padding:19px 44px;font-size:17px">Book a call <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg></a>
+          <a href="mailto:mike@buildoutreach.io" style="color:rgba(255,255,255,.62);font-size:14px;border-bottom:1px solid rgba(255,255,255,.28);padding-bottom:2px;transition:color .25s">or email me instead</a>
+        </div>
+        <div class="status" style="justify-content:center;margin-top:24px;color:rgba(255,255,255,.62)"><span class="dot"></span> Open to fractional &amp; full-time · Remote</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <b>Michael Butts</b>
+        <p>AI-forward operations executive. I make any part of a business run better, more profitable, clearer, built to scale.</p>
+        <div class="status"><span class="dot"></span> Open to fractional &amp; full-time · Remote</div>
+      </div>
+      <div class="foot-links">
+        <a href="mailto:mike@buildoutreach.io"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg> Email</a>
+        <a href="https://www.linkedin.com/in/buildoutreach" target="_blank" rel="noopener"><svg viewBox="0
